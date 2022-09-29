@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pinterest-card {
+  width: 400px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 10vh;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.5s;
+}
+#pinterest-card:hover {
+  opacity: 0.6;
+}
+#pinterest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#pinterest-card-text-save {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 40px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 40px;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 20px;
+  cursor: pointer;
+  transform: translateX(200px);
+  transition: transform 0.5s;
+}
+
+#pinterest-card:hover #pinterest-card-text-save {
+  transform: translateX(0px);
+}
+
+#pinterest-card-text-location {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: white;
+  opacity: 0.8;
+  height: 40px;
+  width: 160px;
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+}
+
+#pinterest-card-share-button {
+  position: absolute;
+  bottom: 30px;
+  left: 245px;
+  background-image: url(./icons8-share-50.png);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+}
+
+#pinterest-card-option-button {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  background-image: url(./icons8-dots-loading-48.png);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+}
+
+#pinterest-card:hover #pinterest-card-text-location {
+  transform: translateY(0px);
+}
+
+#pinterest-card:hover #pinterest-card-share-button {
+  transform: translateY(0px);
+}
+
+#pinterest-card:hover #pinterest-card-option-button {
+  transform: translateY(0px);
+}
